@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__name,
+.form__number {
+  display: flex;
+  flex-direction: column;
+  margin: 8px auto;
+  align-items: center;
+  font-size: large;
+  text-align: left;
+  padding: 8px 200px 8px 16px;
+}
+
+.form__btn {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  background-color: rgba(32, 34, 37, 0.8);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  line-height: 20px;
+  margin-left: 8px;
+  margin-right: 6px;
+  min-width: 185px;
+  padding: 0 16px 0 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background-color: rgb(8, 87, 246);
+  cursor: pointer;
+}

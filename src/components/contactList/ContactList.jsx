@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
+
 import css from './ContactList.module.css';
+import ContactElementList from 'components/contactElementList/ContactElementList';
 
 export default function ContactList({ contacts, handleDelete }) {
   return (
     <ul className={css.contact__list}>
-      {contacts.map((contact, id) => (
+      {contacts.map(({ id, name, number }) => (
         <li className={css.contact__item} key={id}>
-          {contact.name}: {contact.number}
-          <button
-            className={css.contact__list__item__btn}
-            type="button"
-            onClick={() => handleDelete(contact.id)}
-          >
-            Delete
-          </button>
+          
+          <ContactElementList
+            name={name}
+            number={number}
+            handleDelete={() => handleDelete(id)}
+          />
         </li>
       ))}
     </ul>

@@ -1,0 +1,22 @@
+.contact__list__item__btn {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  background-color: rgba(32, 34, 37, 0.8);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  line-height: 20px;
+  margin-left: 20px;
+  margin-right: 6px;
+  max-width: 100px;
+  padding: 0 16px 0 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.contact__list__item__btn:hover {
+  background-color: rgb(8, 87, 246);
+  cursor: pointer;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import ContactForm from './contactForm/ContactForm';
 import ContactList from './contactList/ContactList';
 import Filter from './filter/Filter';
@@ -37,7 +38,7 @@ export class App extends Component {
     const contactsLists = [...this.state.contacts];
 
     if (contactsLists.findIndex(contact => name.toLowerCase() === contact.name.toLowerCase()) !== -1) {
-      alert(`${name} is already in contacts.`);
+      Notify.failure(`${name} is already in contacts.`);
     } else {
       contactsLists.push({ name, id, number });
     }
